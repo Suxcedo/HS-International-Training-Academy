@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs – HS International Training Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e0f7e9, #e6f0ff);
+      color: #034d40;
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav h1 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #028e7b;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #034d40;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #028e7b;
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #4dc4b4;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .card {
+      position: relative;
+      height: 220px;
+      border-radius: 15px;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+      z-index: 1;
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+
+    .card-content .emoji {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .card-content .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card-content .duration {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* Background Images for Cards */
+    .card.c1 { background: url('pic1.jpg') center/cover no-repeat; }
+    .card.c2 { background: url('pic2.jpg') center/cover no-repeat; }
+    .card.c3 { background: url('pic3.avif') center/cover no-repeat; }
+    .card.c4 { background: url('pic4.webp') center/cover no-repeat; }
+    .card.c5 { background: url('pic5.jpg') center/cover no-repeat; }
+
+    footer {
+      background: #00384d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+<div style="display: flex; align-items: center; gap: 10px;">
+  <img src="nice.JPG" alt="Logo" width="40" height="40" style="object-fit: contain;" />
+  <h1 style="margin: 0; font-size: 1.2rem; color: #028e7b;">HS International Training Academy</h1>
+</div>
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="program.html">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Our Training Programs and services </h1>
+    <p> <i>we care for your loved ones</i></p>
+  </header>
+
+  <section class="grid">
+    <div class="card c1">
+      <div class="card-content">
+        <div class="emoji">🧑‍⚕️</div>
+        <div class="title">Caregiver</div>
+        <a href="https://wa.me/27833694466" target="_blank">
+        <div class="duration">contact us now</div></a>
+      </div>
+    </div>
+
+    <div class="card c2">
+      <div class="card-content">
+        <div class="emoji">🧓</div>
+        <div class="title">Elderly Care</div>
+        <a href="https://wa.me/27833694466" target="_blank">
+        <div class="duration">contact us now</div></a>
+      </div>
+    </div>
+
+    <div class="card c3">
+      <div class="card-content">
+        <div class="emoji">🤱</div>
+        <div class="title">Newborn Caregiving</div>
+         <a href="https://wa.me/27833694466" target="_blank">
+        <div class="duration">contact us now</div></a>
+      </div>
+    </div>
+ 
+    <div class="card c4">
+      <div class="card-content">
+        
+        <div class="title">ECD</div>
+        <div class="duration">Early Childhood Development</div>
+        <a href="https://wa.me/27833694466" target="_blank">
+        <div class="number">contact us now</div>
+      </div></a>
+    </div>
+
+    <div class="card c5">
+      <div class="card-content">
+      
+<div class="title">  Au Pair</div>
+        <div class="duration">Childcare & Household Management</div>
+        
+        <a href="https://wa.me/27833694466" target="_blank">
+            <div class="number">contact us now</div>
+        
+      </div></a>
+    </div>
+  </section>
+ <br> <br> <br> <br> <br> <br> <br>
+  <footer>
+    &copy; 2025 HS International Training Academy. All rights reserved.
+  </footer>
+</body>
+</html>
